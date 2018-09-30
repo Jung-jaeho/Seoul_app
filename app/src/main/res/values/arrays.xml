@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="language">
+        <item size="15.56dp">한국어</item>
+        <item size="15.56dp">English</item>
+        <item size="15.56dp">Japen(日本)</item>
+        <item size="15.56dp">China(中国)</item>
+    </string-array>
+</resources>

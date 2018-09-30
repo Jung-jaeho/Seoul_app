@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/popup_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/popup_exit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/exit_btn"
+            app:layout_constraintBottom_toBottomOf="@+id/today_recommend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/today_recommend"
+            android:layout_width="300dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            android:textSize="17.56dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/recommend_Img"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/today_recommend"
+            app:srcCompat="@drawable/ic_loading" />
+
+        <TextView
+            android:id="@+id/recommend_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/main_color"
+            android:textSize="15.56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recommend_Img" />
+
+        <TextView
+            android:id="@+id/festv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            android:text="TextView"
+            android:textSize="13.33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recommend_Name" />
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/go_Info"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/go_Info"
+            android:layout_width="112dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:background="@drawable/recommend_link"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/festv_date" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

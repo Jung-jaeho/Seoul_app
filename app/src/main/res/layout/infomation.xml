@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/festivalImg"
+            android:layout_width="215.43dp"
+            android:layout_height="304.25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Top"
+            app:srcCompat="?attr/actionBarDivider" />
+
+        <TextView
+            android:id="@+id/info_FestivalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="24dp"
+            android:text="축제이름"
+            android:textSize="15.56dp"
+            android:textColor="#003355"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/festivalImg" />
+
+        <TextView
+            android:id="@+id/info_FestivalTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="4dp"
+            android:text="축제기간"
+            android:textSize="12.22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_FestivalName" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/info_bar"
+            android:gravity="center"
+            android:text="상세 정보"
+            android:textColor="@color/white"
+            android:textSize="15.56dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_FestivalTerm" />
+
+        <TextView
+            android:id="@+id/info_Detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:text="상세 정보"
+            android:textSize="13.33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/info_bar"
+            android:gravity="center"
+            android:text="위치 정보"
+            android:textColor="@color/white"
+            android:textSize="15.56dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_Detail" />
+
+        <TextView
+            android:id="@+id/info_FestivalLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:text="주소"
+            android:textSize="13.33dp"
+            app:layout_constraintBottom_toTopOf="@+id/map_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <TextView
+            android:id="@+id/homepageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/chat_bubble"
+            android:textColor="@color/white"
+            android:textSize="15.56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etc_Info"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/Top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="축제 정보"
+            android:textSize="15.56dp"
+            android:textStyle="bold"
+            android:textColor="#003355"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back_button"
+            app:layout_constraintBottom_toBottomOf="@+id/Top"
+            app:layout_constraintEnd_toStartOf="@+id/festivalImg"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Top"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/favoriteBtn"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/click_heart"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/Top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintStart_toEndOf="@+id/festivalImg"
+            app:layout_constraintTop_toTopOf="@+id/Top" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/nonclick_heart"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/Top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintStart_toEndOf="@+id/festivalImg"
+            app:layout_constraintTop_toTopOf="@+id/Top" />
+
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.616"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_FestivalLocation">
+
+            <fragment
+                android:id="@+id/map2"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginStart="0dp"></fragment>
+
+            <Button
+                android:id="@+id/colorless_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#00ff0000"></Button>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/info_Etc"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/info_bar"
+            android:gravity="center"
+            android:text="기타 정보"
+            android:textColor="@color/white"
+            android:textSize="15.56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_FestivalLocation2" />
+
+        <TextView
+            android:id="@+id/etc_Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:text="기타 정보"
+            android:textSize="13.33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_Etc" />
+
+        <TextView
+            android:id="@+id/info_FestivalLocation2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:text="(자세히 보려면 지도를 클릭하세요.)"
+            android:textAlignment="center"
+            android:textSize="13.33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map_layout" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

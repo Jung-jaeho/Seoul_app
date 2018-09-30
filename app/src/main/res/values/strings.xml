@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">컬쳐 in 서울</string>
+    <string name="title_home">Home</string>
+    <string name="title_communication">Communication</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_question">Question</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="Korean">ko</string>
+    <string name="English">en</string>
+    <string name="Japanese">ja</string>
+    <string name="Chinese">zh</string>
+    <string name="Chinese_translate">zh-CN</string>
+
+    <string name="Listen">Listen</string>
+    <string name="Copy">Copy</string>
+</resources>
