@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon_click"
+        android:title="@string/title_home"
+        android:state_checked="true"/>
+
+    <item
+        android:id="@+id/navigation_communication"
+        android:icon="@drawable/trans_icon_nonclick"
+        android:title="@string/title_communication" />
+
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/likes_icon_nonclick"
+        android:title="@string/title_favorite" />
+
+    <item
+        android:id="@+id/navigation_question"
+        android:icon="@drawable/qa_icon_nonclick"
+        android:title="@string/title_question" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/setting_icon_nonclick"
+        android:title="@string/title_settings" />
+
+</menu>

@@ -1,0 +1,29 @@
+>>>Font size<<<
+
+사용한 폰트: Kopub 돋움체 Medium
+http://www.kopus.org/Biz/electronic/Font.aspx
+
+[intro]
+언어 선택, 시작하기: 15.56dp
+Copyright 2018ㅡ: 8.89dp
+
+[main]
+테마별, 지역별: 15.56dp (기본 Medium, 선택시 Bold)
+
+변경하기: 12.22dp, Bold
+18년 0월 0일 ~ 18년ㅡ: 12.22dp, Bold
+
+총 00개의 축제: 13.33dp, Bold
+(이미지 안에 적혀있는) #공연, #스포츠, #ETC: 22.22dp, Bold
+(이미지 안에 적혀있는) 00개의 축제: 12.22dp, Bold
+
+네비게이션바: 10dp, Bold
+
+강남구: 20dp, Bold
+
+#전시: 12.22dp
+마르크 샤갈 특별전 - 영혼의 정원: 20dp
+18년 4월 28일 ~ 18년 9월 2일: 11.11dp
+
+이 지역구에서 열리는 축제: 12.22dp
+더 알아보기: 18.89dp

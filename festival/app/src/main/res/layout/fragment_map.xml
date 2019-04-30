@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="3"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/area_mark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/map_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="관심있는 지역을 선택해주세요."
+        android:textAlignment="center"
+        android:textColor="@color/main_color"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="5"
+        android:background="@drawable/seoul_map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_explanation"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/map_east_north"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/map_east_south"
+            android:layout_marginTop="143dp"
+            android:background="@drawable/map_name_button"
+            android:gravity="center"
+            android:text="동북권"
+            android:textColor="@color/main_color"
+            android:textSize="13.33dp" />
+
+        <TextView
+            android:id="@+id/map_west_north"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/map_west_south"
+            android:layout_alignTop="@+id/map_east_north"
+            android:background="@drawable/map_name_button"
+            android:gravity="center"
+            android:text="서북권"
+            android:textColor="@color/main_color"
+            android:textSize="13.33dp" />
+
+        <TextView
+            android:id="@+id/map_west_south"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="93dp"
+            android:layout_marginStart="69dp"
+            android:background="@drawable/map_name_button"
+            android:gravity="center"
+            android:text="서남권"
+            android:textColor="@color/main_color"
+            android:textSize="13.33dp" />
+
+        <TextView
+            android:id="@+id/map_east_south"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/map_west_south"
+            android:layout_marginEnd="58dp"
+            android:background="@drawable/map_name_button"
+            android:gravity="center"
+            android:text="동남권"
+            android:textColor="@color/main_color"
+            android:textSize="13.33dp" />
+
+        <TextView
+            android:id="@+id/map_center"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="134dp"
+            android:background="@drawable/map_name_button"
+            android:gravity="center"
+            android:text="중구"
+            android:textColor="@color/main_color"
+            android:textSize="13.33dp" />
+    </RelativeLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView8"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="이 지역에서 열리는 축제"-->
+    <!--android:textSize="11.78dp" />-->
+
+</android.support.constraint.ConstraintLayout>

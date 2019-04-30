@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location">
+        <item id="north" size="15.56dp">강북</item>
+        <item id="east" size="15.56dp">강동</item>
+        <item id="south" size="15.56dp">강남</item>
+        <item id="west" size="15.56dp">강서</item>
+        <item id="center" size="15.56dp">중구</item>
+    </string-array>
+</resources>
